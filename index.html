@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Başarı Can — Birinci sınıf okuma uygulaması</title>
+<meta name="description" content="İlkokul birinci sınıf düzeyinde okuma ve sesletim çalışması. Harften heceye, heceden cümleye; sesli okuma değerlendirmesi ve 78 oyun.">
+<style>
+  :root {
+    --ground: #fbfaf7;
+    --surface: #ffffff;
+    --ink: #1b1815;
+    --muted: #6e6862;
+    --rule: #e3dcd2;
+    --accent: #8a4e17;
+    --gok: #2ba3e0;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --ground: #15130f;
+      --surface: #1e1b16;
+      --ink: #f0eae0;
+      --muted: #a29a8f;
+      --rule: #342e26;
+      --accent: #d99a4e;
+      --gok: #6cc4ef;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--ground);
+    color: var(--ink);
+    font: 16px/1.65 system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  main {
+    max-width: 780px;
+    margin: 0 auto;
+    padding-inline: 20px;
+    padding-block: 40px 72px;
+  }
+
+  .giris {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    flex-wrap: wrap;
+    margin-bottom: 8px;
+  }
+  .giris img {
+    width: 104px;
+    height: 104px;
+    border-radius: 22px;
+    max-width: 100%;
+  }
+  h1 {
+    font-size: clamp(30px, 6vw, 42px);
+    line-height: 1.1;
+    margin: 0 0 6px;
+    letter-spacing: -.02em;
+    text-wrap: balance;
+  }
+  .slogan { color: var(--muted); margin: 0; font-size: 17px; }
+
+  .afis {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 14px;
+    margin: 32px 0 8px;
+    display: block;
+  }
+
+  h2 {
+    font-size: 20px;
+    margin: 40px 0 10px;
+    padding-top: 20px;
+    border-top: 1px solid var(--rule);
+  }
+  p, li { max-width: 64ch; }
+  ul { padding-left: 1.2em; }
+  li + li { margin-top: 6px; }
+
+  .kartlar {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 14px;
+    margin-top: 18px;
+  }
+  .kartlar section {
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    border-radius: 12px;
+    padding: 16px 18px;
+  }
+  .kartlar h3 {
+    margin: 0 0 6px;
+    font-size: 16px;
+  }
+  .kartlar p { margin: 0; font-size: 14.5px; color: var(--muted); }
+
+  dl.iletisim {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: 8px 18px;
+    margin: 0;
+  }
+  dl.iletisim dt { color: var(--muted); }
+  dl.iletisim dd { margin: 0; overflow-wrap: anywhere; }
+
+  a { color: var(--accent); }
+  footer {
+    margin-top: 48px;
+    padding-top: 20px;
+    border-top: 1px solid var(--rule);
+    color: var(--muted);
+    font-size: 14px;
+  }
+</style>
+</head>
+<body>
+<main>
+
+  <div class="giris">
+    <img src="magaza_simgesi_512.png" alt="Başarı Can uygulama simgesi">
+    <div>
+      <h1>Başarı Can</h1>
+      <p class="slogan">Birinci sınıf okuma ve sesletim yolculuğu</p>
+    </div>
+  </div>
+
+  <img class="afis" src="one_cikan_gorsel_1024x500.png"
+       alt="Başarı Can tanıtım görseli: ejderha maskotu ve uygulama adı">
+
+  <p>
+    Başarı Can, ilkokul birinci sınıf düzeyinde okuma çalışması için
+    hazırlanmış bir uygulamadır. Çocuk harfleri tanımaktan başlayıp heceye,
+    kelimeye ve cümleye ilerler; her adımda sesli okur ve uygulama okuduğunu
+    dinler.
+  </p>
+
+  <h2>Neler var</h2>
+  <div class="kartlar">
+    <section>
+      <h3>Okuma yolculuğu</h3>
+      <p>Çalışmalar bir harita üzerinde ilerler. Dersler tamamlandıkça yeni duraklar ve oyunlar açılır.</p>
+    </section>
+    <section>
+      <h3>Sesli okuma değerlendirmesi</h3>
+      <p>Türkçe heceler için hazırlanmış bir ses modeli çocuğun okuduğunu dinler ve geri bildirim verir.</p>
+    </section>
+    <section>
+      <h3>78 oyun</h3>
+      <p>Balık tutma, hece basamakları, kelime bahçesi, hikâye tiyatrosu. Oyunlar ilgili dersler bitince açılır.</p>
+    </section>
+    <section>
+      <h3>Kitaplık</h3>
+      <p>Resimli kısa hikâyeler, dünya klasiklerinden uyarlamalar, kelime kartları, tekerlemeler.</p>
+    </section>
+  </div>
+
+  <h2>Veliler için</h2>
+  <ul>
+    <li>Reklam yok, uygulama içi satın alma yok.</li>
+    <li>Dersler, okuma ve ses değerlendirmesi çevrimdışı çalışır.</li>
+    <li>Profil bilgisi ve ilerleme kayıtları yalnızca cihazda tutulur.</li>
+    <li>Ses kayıtlarının araştırma amacıyla paylaşılması isteğe bağlıdır ve veli onayına bağlıdır.</li>
+    <li>İlerleme ekranında çocuğun hangi sesleri çalıştığı, doğru ve yanlış sayıları görünür.</li>
+  </ul>
+
+  <h2>İletişim</h2>
+  <dl class="iletisim">
+    <dt>Geliştirici</dt><dd>Özkan Kara</dd>
+    <dt>E-posta</dt><dd><a href="mailto:basarican.destek@gmail.com">basarican.destek@gmail.com</a></dd>
+    <dt>Gizlilik</dt><dd><a href="gizlilik.html">Gizlilik politikası</a></dd>
+  </dl>
+
+  <footer>
+    <p>
+      Başarı Can bir eğitim ve alıştırma uygulamasıdır. Tıbbi teşhis aracı
+      değildir; çocuğunuzun konuşması veya okuması hakkında bir kaygınız varsa
+      bir uzmana danışın.
+    </p>
+  </footer>
+
+</main>
+</body>
+</html>

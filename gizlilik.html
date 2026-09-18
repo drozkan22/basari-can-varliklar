@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Başarı Can — Gizlilik Politikası</title>
+<style>
+  :root {
+    --ground: #fbfaf7;
+    --ink: #1b1815;
+    --muted: #6e6862;
+    --rule: #e3dcd2;
+    --accent: #8a4e17;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --ground: #15130f;
+      --ink: #f0eae0;
+      --muted: #a29a8f;
+      --rule: #342e26;
+      --accent: #d99a4e;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--ground);
+    color: var(--ink);
+    font: 16px/1.65 system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding-inline: 20px;
+    padding-block: 48px 72px;
+  }
+  h1 {
+    font-size: clamp(26px, 5vw, 34px);
+    line-height: 1.15;
+    margin: 0 0 6px;
+    text-wrap: balance;
+  }
+  .tarih { color: var(--muted); font-size: 14px; margin: 0 0 32px; }
+  h2 {
+    font-size: 19px;
+    margin: 36px 0 10px;
+    padding-top: 18px;
+    border-top: 1px solid var(--rule);
+  }
+  p, li { max-width: 64ch; }
+  ul { padding-left: 1.2em; }
+  li + li { margin-top: 6px; }
+  dl.kunye {
+    margin: 0 0 8px;
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: 6px 16px;
+  }
+  dl.kunye dt { color: var(--muted); }
+  dl.kunye dd { margin: 0; }
+  a { color: var(--accent); }
+  .not {
+    margin-top: 40px;
+    padding-top: 18px;
+    border-top: 1px solid var(--rule);
+    color: var(--muted);
+    font-size: 14px;
+  }
+</style>
+</head>
+<body>
+<main>
+
+<h1>Başarı Can — Gizlilik Politikası</h1>
+<p class="tarih">Yürürlük tarihi: 18 Eylül 2026</p>
+
+<p>
+  Başarı Can, ilkokul birinci sınıf düzeyinde okuma ve sesletim çalışması için
+  tasarlanmış bir uygulamadır. Çocuklara yöneliktir ve bu nedenle toplanan veri
+  en aza indirilmiştir. Bu metin, uygulamanın hangi verileri neden işlediğini
+  açıklar ve uygulama içindeki onay ekranıyla aynı bilgiyi taşır.
+</p>
+
+<h2>Veri sorumlusu</h2>
+<dl class="kunye">
+  <dt>Ad</dt><dd>Özkan Kara</dd>
+  <dt>İletişim</dt><dd><a href="mailto:basarican.destek@gmail.com">basarican.destek@gmail.com</a></dd>
+  <dt>Uygulama</dt><dd>com.drozkan.basarican</dd>
+</dl>
+
+<h2>İşlenen veriler</h2>
+<ul>
+  <li><strong>Profil bilgisi:</strong> çocuğun adı veya takma adı, seçilen avatar. Yaş ve cinsiyet isteğe bağlıdır, boş bırakılabilir.</li>
+  <li><strong>Ders ilerlemesi:</strong> tamamlanan çalışmalar, doğru ve yanlış sayıları, çalışma süreleri.</li>
+  <li><strong>Ses kayıtları:</strong> mikrofona basıldığında alınan kısa okuma ve sesletim kayıtları.</li>
+  <li><strong>Veli hesabı:</strong> hesap oluşturulursa e-posta adresi ve görünen ad.</li>
+</ul>
+
+<h2>Veriler nerede tutulur</h2>
+<p>
+  Profil bilgisi, ilerleme kayıtları ve ayarlar yalnızca cihazın içinde,
+  uygulamaya ait özel alanda saklanır. Uygulama çevrimdışı çalışacak biçimde
+  tasarlanmıştır; bu veriler hiçbir sunucuya gönderilmez.
+</p>
+<p>
+  Ses kayıtları değerlendirme yapıldıktan sonra cihazda tutulur. Profil
+  silindiğinde o profile ait tüm kayıtlar da silinir.
+</p>
+<p>
+  Veli hesabı oluşturulursa e-posta ve görünen ad Google Firebase üzerinde,
+  Avrupa Birliği bölgesinde (eur3) saklanır.
+</p>
+
+<h2>Kamera</h2>
+<p>
+  Uygulamanın göz egzersizi bölümü ön kamerayı kullanır. Görüntü
+  <strong>yalnızca cihazda, anlık olarak</strong> çözümlenir; hiçbir kare
+  dosyaya yazılmaz, saklanmaz ve hiçbir yere gönderilmez.
+</p>
+
+<h2>Ses kayıtlarının takma adlı paylaşımı</h2>
+<p>
+  Türkçe hece ve sesletim tanıma doğruluğunun geliştirilmesi için, sesletim
+  sapması saptanan kayıtların araştırma amacıyla kullanılmasına izin verilmesi
+  istenir. Bu izin <strong>isteğe bağlıdır</strong>; verilmese de uygulamanın
+  tüm özellikleri aynı şekilde çalışır.
+</p>
+<p>İzin verildiğinde:</p>
+<ul>
+  <li>Yalnızca sesletim sapması saptanan kayıtlar gönderilir; her çalışma kaydedilip gönderilmez.</li>
+  <li>Kayıtla birlikte ad, avatar, e-posta, hesap bilgisi, cihaz kimliği veya iletişim bilgisi gönderilmez.</li>
+  <li>Kayda yaş ve cinsiyet bilgisi, okunması istenen hedef metin, değerlendirme sonucu ve ses kalibrasyon ayarı eşlik eder.</li>
+  <li>Kayıtlar rastgele üretilmiş bir kimlik altında gönderilir. Bu kimlik hiçbir hesaba, ada veya cihaza bağlı değildir; ancak aynı çocuğun kayıtlarını birbirine bağlar. Bu nedenle veri <strong>anonim değil, takma adlıdır</strong> ve kişisel veri olarak korunur.</li>
+  <li>Kayıtlar en çok bir yıl saklanır, süre dolduğunda silinir.</li>
+  <li>Kayıtlar yalnızca tanıma modelinin doğruluğunu ölçmek ve geliştirmek için kullanılır.</li>
+</ul>
+<p>
+  İzin istenildiği zaman <em>Profil &gt; Ayarlar &gt; Ses kaydı paylaşımı</em>
+  bölümünden kapatılabilir. Kapatıldığında yeni kayıt gönderilmez ve gönderilmeyi
+  bekleyen kayıtlar silinir.
+</p>
+
+<h2>Verilerin paylaşılmadığı yerler</h2>
+<ul>
+  <li>Reklam ağlarına veri gönderilmez; uygulamada reklam yoktur.</li>
+  <li>Reklam kimliği kullanılmaz.</li>
+  <li>Veriler profilleme amacıyla kullanılmaz.</li>
+  <li>Veriler üçüncü kişilere satılmaz.</li>
+  <li>Uygulama içi satın alma yoktur.</li>
+</ul>
+<p>
+  Kullanılan tek altyapı hizmeti Google Firebase'dir (kimlik doğrulama,
+  veritabanı ve dosya saklama). Uygulama ayrıca ses değerlendirme modelini ve
+  büyük içerik paketlerini GitHub üzerinden indirir; bu indirmeler sırasında
+  kişisel veri gönderilmez.
+</p>
+
+<h2>Çocuklara yönelik olması</h2>
+<p>
+  Uygulama çocuklar için tasarlanmıştır. Onayı çocuğun velisi veya yasal
+  temsilcisi vermelidir. Onay verilerek, çocuk adına karar verme yetkisine
+  sahip olunduğu beyan edilmiş olur. Onay verilmediğinde uygulama açılmaz ve
+  hiçbir veri işlenmez.
+</p>
+
+<h2>Haklarınız</h2>
+<p>
+  6698 sayılı Kişisel Verilerin Korunması Kanunu kapsamında; işlenen verilere
+  erişme, düzeltilmesini veya silinmesini isteme ve verilen açık rızayı geri
+  alma haklarına sahipsiniz.
+</p>
+<ul>
+  <li><em>Profil &gt; Temiz başlangıç</em> ilerleme kayıtlarını siler.</li>
+  <li>Profil silme işlemi o profile ait tüm verileri cihazdan kaldırır.</li>
+  <li>Paylaşılan ses kayıtları için silme talebinizi <a href="mailto:basarican.destek@gmail.com">basarican.destek@gmail.com</a> adresine iletin. Talebinizde <em>Profil &gt; Ayarlar</em> bölümünde gösterilen takma ad kimliğini bildirmeniz, kayıtların bulunup silinebilmesi için gereklidir.</li>
+</ul>
+
+<h2>Değişiklikler</h2>
+<p>
+  Bu metin değiştiğinde yürürlük tarihi güncellenir. Esaslı bir değişiklik
+  olduğunda uygulama açılışında onay yeniden istenir.
+</p>
+
+<p class="not">
+  Bu metin bir hukuk danışmanı tarafından hazırlanmamıştır.
+</p>
+
+</main>
+</body>
+</html>
