@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Başarı Can — Hesap Silme</title>
+<style>
+  :root {
+    --ground: #fbfaf7;
+    --ink: #1b1815;
+    --muted: #6e6862;
+    --rule: #e3dcd2;
+    --accent: #8a4e17;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --ground: #15130f;
+      --ink: #f0eae0;
+      --muted: #a29a8f;
+      --rule: #342e26;
+      --accent: #d99a4e;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--ground);
+    color: var(--ink);
+    font: 16px/1.65 system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding-inline: 20px;
+    padding-block: 48px 72px;
+  }
+  h1 {
+    font-size: clamp(26px, 5vw, 34px);
+    line-height: 1.15;
+    margin: 0 0 6px;
+    text-wrap: balance;
+  }
+  .tarih { color: var(--muted); font-size: 14px; margin: 0 0 32px; }
+  h2 {
+    font-size: 19px;
+    margin: 36px 0 10px;
+    padding-top: 18px;
+    border-top: 1px solid var(--rule);
+  }
+  p, li { max-width: 64ch; }
+  ul { padding-left: 1.2em; }
+  li + li { margin-top: 6px; }
+  dl.kunye {
+    margin: 0 0 8px;
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: 6px 16px;
+  }
+  dl.kunye dt { color: var(--muted); }
+  dl.kunye dd { margin: 0; }
+  a { color: var(--accent); }
+  .not {
+    margin-top: 40px;
+    padding-top: 18px;
+    border-top: 1px solid var(--rule);
+    color: var(--muted);
+    font-size: 14px;
+  }
+</style>
+</head>
+<body>
+<main>
+
+<h1>Başarı Can — Hesap Silme</h1>
+<p class="tarih">Güncelleme: 21 Eylül 2026</p>
+
+<p>
+  Bu sayfa, <strong>Başarı Can</strong> (<code>com.drozkan.basarican</code>)
+  uygulamasında açılan veli hesabının ve buna bağlı verilerin nasıl
+  sildirileceğini anlatır.
+</p>
+
+<h2>Uygulama içinden silme</h2>
+<p>En hızlı yol budur ve talep beklemeden anında uygulanır:</p>
+<ol>
+  <li>Uygulamayı açın.</li>
+  <li><em>Profil</em> sekmesine gidin.</li>
+  <li><em>Hesap</em> satırına dokunun.</li>
+  <li><em>Hesabı sil</em> düğmesine dokunup onaylayın.</li>
+</ol>
+
+<h2>Uygulamasız silme</h2>
+<p>
+  Uygulamayı kaldırdıysanız ya da açamıyorsanız, hesabınızın e-posta
+  adresinden <a href="mailto:basarican.destek@gmail.com?subject=Hesap%20silme%20talebi">basarican.destek@gmail.com</a>
+  adresine &#8220;Hesap silme talebi&#8221; konusuyla yazın. Talep, aynı
+  adresten geldiği doğrulandıktan sonra en geç <strong>30 gün</strong> içinde
+  yerine getirilir ve sonucu size bildirilir.
+</p>
+
+<h2>Ne silinir</h2>
+<ul>
+  <li>Firebase kimliğiniz (hesabın kendisi).</li>
+  <li>Sunucudaki veli kaydı: e-posta adresi, görünen ad, son giriş zamanı,
+      onay kaydı ve uygulama sürümü. Silme anında kaldırılır.</li>
+</ul>
+
+<h2>Ne silinmez</h2>
+<ul>
+  <li>
+    <strong>Çocuğun profilleri ve ilerlemesi.</strong> Bunlar yalnızca
+    cihazın içinde tutulur, hiçbir sunucuya gönderilmez ve hesapla bağlı
+    değildir. Silmek için uygulamadaki profil silme işlemini kullanın ya da
+    uygulamayı kaldırın.
+  </li>
+  <li>
+    <strong>Takma adla paylaşılan ses kayıtları.</strong> Bu kayıtlarda hesap
+    kimliği bulunmaz; hangi kaydın hangi hesaptan geldiği bilinmez. Bu
+    bilerek böyledir. Silinmelerini istiyorsanız <em>Profil &gt; Ayarlar</em>
+    bölümünde görünen takma ad kimliğini aynı e-posta adresine bildirin.
+    Kayıtlar her hâlükârde en çok bir yıl saklanır, süre dolduğunda kendiliğinden
+    silinir.
+  </li>
+</ul>
+
+<h2>Saklama süresi</h2>
+<p>
+  Silinen hesap kaydı yedeklerden de kaldırılır ve hiçbir biçimde geri
+  getirilmez. Ses kayıtları için saklama süresi, kaydın alındığı tarihten
+  itibaren bir yıldır.
+</p>
+
+<p>
+  Ayrıntılar için <a href="gizlilik.html">gizlilik politikası</a>.
+</p>
+
+</main>
+</body>
+</html>
