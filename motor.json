@@ -1,0 +1,8 @@
+{
+  "surum": 3,
+  "bicim": 1,
+  "model_url": "https://github.com/drozkan22/basari-can-varliklar/releases/download/model-v3/hece_ctc.int8.onnx",
+  "vocab_url": "https://github.com/drozkan22/basari-can-varliklar/releases/download/model-v3/hece_ctc_vocab.json",
+  "model_bytes": 317461931,
+  "notlar": "Sesli okuma motorunun yeni sürümü hazır: heceleyerek okuyan çocuklarda hataları daha doğru yakalıyor, yanlış uyarı daha az."
+}
