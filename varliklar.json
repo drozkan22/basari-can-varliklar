@@ -1,5 +1,6 @@
 {
   "paketler": {
-    "kelime_gorselleri": "varlik-v3"
+    "kelime_gorselleri": "varlik-v3",
+    "akici_okuma_sesleri": "varlik-v4"
   }
 }
